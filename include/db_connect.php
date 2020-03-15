@@ -3,10 +3,10 @@
 function connect()
 {
 	 $db_config=array(
-		"host"=>"localhost",  
-		"user"=>"root", 
-		"pass"=>"",  
-		"dbname"=>"p360", 
+		"host"=>"us-cdbr-iron-east-04.cleardb.net",  
+		"user"=>"bf1dc098d4d14a", 
+		"pass"=>"06628048",  
+		"dbname"=>"heroku_8e6e36f610ca205", 
 		"charset"=>"utf8" 
 	);
 
