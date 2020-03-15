@@ -80,7 +80,7 @@ h1 { text-align: center; margin-top: 0px; }
   .drag_elm {
     width: 30px;
     height: 35px;
-    background-image: url("lo1.png");
+    background-image: url("pin.png");
   }
 
   .snippet_item {
