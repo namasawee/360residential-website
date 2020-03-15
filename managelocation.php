@@ -80,7 +80,7 @@ h1 { text-align: center; margin-top: 0px; }
   .drag_elm {
     width: 30px;
     height: 35px;
-    background-image: url("pin.png");
+    background-image: url("lo1.png");
   }
 
   .snippet_item {
@@ -406,7 +406,7 @@ input[type=submit]:hover {
 			"POINT<?=$i?>": {
 				"cordX": "<?=$rsL['pointX']?>",
 				"cordY": "<?=$rsL['pointY']?>",
-				"icon": "I01.png",
+				"icon": "pin.png",
 				"modal": {
 					"title": "<?=$rsL['360Name']?>",
 					"content": "<p><a href='managelocation.php?Del=Del&pid=<?=$_GET['pid']?>&id=<?=$rsL['id']?>'><img src='img/Delete.png' width='20' height='20'></a>Delete <a href='managelocation.php?pid=<?=$_GET['pid']?>&id=<?=$rsL['id']?>'><a href='VIEW360.php?id=<?=$rsL['id']?>' target='_blank'><img src='img/360.png'></a> View <br> </p>"
