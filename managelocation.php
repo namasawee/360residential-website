@@ -409,7 +409,7 @@ input[type=submit]:hover {
 				"icon": "pin.png",
 				"modal": {
 					"title": "<?=$rsL['360Name']?>",
-					"content": "<p><a href='managelocation.php?Del=Del&pid=<?=$_GET['pid']?>&id=<?=$rsL['id']?>'><img src='img/Delete.png' width='20' height='20'></a>Delete <a href='managelocation.php?pid=<?=$_GET['pid']?>&id=<?=$rsL['id']?>'><a href='VIEW360.php?id=<?=$rsL['id']?>' target='_blank'><img src='img/360.png'></a> View <br> </p>"
+					"content": "<p><a href='managelocation.php?Del=Del&pid=<?=$_GET['pid']?>&id=<?=$rsL['id']?>'><img src='img/delete.png' width='20' height='20'></a>Delete <a href='managelocation.php?pid=<?=$_GET['pid']?>&id=<?=$rsL['id']?>'><a href='VIEW360.php?id=<?=$rsL['id']?>' target='_blank'><img src='img/360.png'></a> View <br> </p>"
 				}
 			},
 			<?php
