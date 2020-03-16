@@ -135,7 +135,9 @@ body{
 					{
 						$rsp=$qrp[$i];
 				?>
-        <a href="VIEW360.php?id=<?=$rsp['id']?>" target="_parent"><button class="button" style="vertical-align:middle"><span>ห้อง <?=$rsp['360Name']?></span></button></a><br>
+        <center><a href="VIEW360.php?id=<?=$rsp['id']?>" target="_parent"><br><button type="button" class="btn btn-success"><span>ห้อง <?=$rsp['360Name']?></span>
+		</button></a>
+		</center>
         
         <?php
 			$i++;
