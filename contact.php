@@ -69,7 +69,7 @@ $mysqli = connect();
 				$rsp=$qrp[$i];
 
 ?>
-           <a class="dropdown-item" href="index2.php?pid=<?=$rsp['pid']?>"><?=$rsp['pname']?></a>
+           <a class="dropdown-item" href="index.php?pid=<?=$rsp['pid']?>"><?=$rsp['pname']?></a>
 <?php
 
 			$i++;
@@ -108,130 +108,20 @@ $mysqli = connect();
                 </div>
             </div>
         </div>
-        
+        <div class ="container p-3 my-3 " >
+        <h1>Contact</h1><br>
+        Facebook : Nut namasawee (นัท)   เบอร์โทร : 0946501881    <br> Facebook : F'Few surasie (ฟิว) เบอร์โทร : 081234567
+        <!-- <br><br> เบอร์โทร :  0946501881 <br>เบอร์โทร :  081234567 -->
+        </div>
+        <div class ="container"><img src ="nut.jpg" width ="400" height ="400">
+        <img src ="few.jpg" width ="400" height ="400">
+        </div>
     </header>
     <!-- Header part end-->
-<br><br><br><br><br><br><br><br><br>
- <!--================Category Product Area =================-->
-    <section class="cat_product_area ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="left_sidebar_area">
-                        <aside class="left_widgets p_filter_widgets">
-                            <div class="l_w_title">
-                                <h3>รายการอาคารหลักทั้งหมด</h3>
-                            </div>
-                            <div class="widgets_inner">
-                                <ul class="list">
-                                
-                                  <?php
-									
-			$sqlp="SELECT * FROM plan order by pid ASC"; 
-			$qrp=select($sqlp); 
-			$totalp=count($qrp); 
-			$i=0; 
-			if($totalp > 0){
-	            while($i<count($qrp)) {
-				$rsp=$qrp[$i];
 
-			?>
-                                    <li>
-                                        <a href="index2.php?pid=<?=$rsp['pid']?>"><i class="ti-heart"></i> &nbsp;&nbsp;<?=$rsp['pname']?></a>
-                                        <span>--></span>
-                                    </li>
-                                    
-                                    <?php
+    
 
-			$i++;
-				}
-			}
-			?>
-                                
-                                </ul>
-                            </div>
-                        </aside>
-
-                      
-                        
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row align-items-center latest_product_inner">
-                      
-                      <?php
-					  
-					  	if($_GET['pid'] != ""){
-							
-							 $sqlL="SELECT * FROM img360 WHERE pid='".$_GET['pid']."' ORDER BY pid DESC"; 
-							 
-						}else{
-							
-							 $sqlL="SELECT * FROM img360 ORDER BY pid DESC LIMIT 6";
-						}
-						
-						$qrL=select($sqlL); 
-						$totalL=count($qrL); 
-						$i=0; 
-						if($totalL > 0)
-						{
-							while($i<count($qrL))
-							{
-								$rsL=$qrL[$i];
-					  ?>  
-                        
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="single_product_item">
-                              <img src="img/360TITLE/<?=$rsL['imagetitle']?>" alt="" width="260" height="270">
-                              <div class="single_product_text">
-                                <h4><?=$rsL['360Name']?></h4>
-                                    <!--<h3>$150.00</h3>-->
-                               <a href="VIEW360.php?id=<?=$rsL['id']?>" class="add_cart" target="_blank"><img src="img/360.png"> <<< View >>> <img src="img/360.png"></a>
-                              </div>
-                          </div>
-                        </div>
-                        
-                      <?php
-					  			$i++;
-							}
-						}
-					  ?>
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- <!--================End Category Product Area =================-->
-
-   <!--::footer_part start::-->
-    <footer class="footer_part">
-             
-        <div class="copyright_part">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="copyright_text">
-                            <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
- &copy;<script>document.write(new Date().getFullYear());</script> <i class="ti-heart" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="footer_icon social_icon">
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
-                                <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--::footer_part end::-->
+  
 
     <!-- jquery plugins here-->
     <script src="js/jquery-1.12.1.min.js"></script>

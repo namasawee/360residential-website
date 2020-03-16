@@ -69,7 +69,7 @@ $mysqli = connect();
 				$rsp=$qrp[$i];
 
 ?>
-           <a class="dropdown-item" href="index.php?pid=<?=$rsp['pid']?>"><?=$rsp['pname']?></a>
+           <a class="dropdown-item" href="index2.php?pid=<?=$rsp['pid']?>"><?=$rsp['pname']?></a>
 <?php
 
 			$i++;
@@ -87,7 +87,7 @@ $mysqli = connect();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><h3>ติดต่อเรา</h3></a>
+                                    <a class="nav-link" href="contact.ohp"><h3>ติดต่อเรา</h3></a>
                                 </li>
 
                                 <li class="nav-item">
