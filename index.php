@@ -87,7 +87,7 @@ $mysqli = connect();
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.ohp"><h3>ติดต่อเรา</h3></a>
+                                    <a class="nav-link" href="contact.php"><h3>ติดต่อเรา</h3></a>
                                 </li>
 
                                 <li class="nav-item">
