@@ -229,9 +229,11 @@ $i=0;
                                  <li class="nav-item dropdown">
                                       <a class="nav-link dropdown-toggle " href="adduser.php" ><h3>ผู้ใช้งานระบบ</h3>
                                       </a>
+									  <?php if($_COOKIE['Culevel'] == "Y"){?>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
           				 <a class="dropdown-item" href="adduser.php?ADD=ADD">เพิ่มผู้ใช้งานระบบ</a>
                                     </div>
+									<?php } ?>
                                 </li>
                                   <li class="nav-item dropdown">
                                       <a class="nav-link dropdown-toggle " href="addplan.php" ><h3>จัดการสถานที่</h3>
