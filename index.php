@@ -13,6 +13,7 @@ $mysqli = connect();
 <html lang="zxx">
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,10 +36,12 @@ $mysqli = connect();
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <!--::header part start::-->
+    
     <header class="main_menu home_menu">
         <div class="container">
             <div class="row align-items-center">
